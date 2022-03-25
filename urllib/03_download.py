@@ -4,6 +4,7 @@
 
 import urllib.request
 
+# urllib.request.urlretrieve该方法不能创建文件夹，只能创建文件
 # 下载网页
 url_page = "http://www.baidu.com/"
 # 参数: url, filename

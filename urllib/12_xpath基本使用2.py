@@ -5,6 +5,8 @@
 import urllib.request
 from lxml import etree
 
+# 浏览器 ctrl+shift+x
+
 url = "https://www.baidu.com/"
 
 # 请求对象,反爬的一种手段
