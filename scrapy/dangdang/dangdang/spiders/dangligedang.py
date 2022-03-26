@@ -29,9 +29,9 @@ class DangligedangSpider(scrapy.Spider):
             name = li.xpath('.//img/@alt').extract_first()
             price = li.xpath('.//p[@class="price"]/span[1]/text()').extract_first()
             # print(src, name, price)
-            book = DangdangItem(src=src, name=name, price=price)
 
             # 获得一个book, 就将book交给 pipelines
+            book = DangdangItem(src=src, name=name, price=price)
             yield book
 
         # 重复函数调用，下载多页信息
