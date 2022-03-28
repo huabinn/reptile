@@ -1,4 +1,4 @@
-# Scrapy settings for baidu project
+# Scrapy settings for dushu project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,22 +7,20 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'baidu'
+BOT_NAME = 'dushu'
 
-SPIDER_MODULES = ['baidu.spiders']
-NEWSPIDER_MODULE = 'baidu.spiders'
+SPIDER_MODULES = ['dushu.spiders']
+NEWSPIDER_MODULE = 'dushu.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'baidu (+http://www.yourdomain.com)'
+#USER_AGENT = 'dushu (+http://www.yourdomain.com)'
 
-# 指定日志级别
 # LOG_LEVEL = "WARNING"
-LOG_FILE = "logdemo.log"
-
+LOG_FILE = "rizhi.log"
 
 # Obey robots.txt rules
-# ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -50,13 +48,13 @@ LOG_FILE = "logdemo.log"
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'baidu.middlewares.BaiduSpiderMiddleware': 543,
+#    'dushu.middlewares.DushuSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'baidu.middlewares.BaiduDownloaderMiddleware': 543,
+#    'dushu.middlewares.DushuDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -67,9 +65,9 @@ LOG_FILE = "logdemo.log"
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'baidu.pipelines.BaiduPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'dushu.pipelines.DushuPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
